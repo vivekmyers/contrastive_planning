@@ -1,0 +1,6 @@
+__pycache__
+.*
+
+figures
+checkpoints
+results

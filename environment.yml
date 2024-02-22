@@ -1,0 +1,47 @@
+name: contrastive_planning
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  - python=3.9
+  - jax=0.4.23
+  - jaxlib=*=*cuda*
+  - cuda-nvcc
+  - pytorch=2.1
+  - einops=0.7.0
+  - labmaze=1.0.6
+  - lcms2=2.16
+  - opencv=4.9.0
+  - glew=2.1.0
+  - scikit-learn=1.4.1.post1
+  - dm-env=1.6
+  - swig=4.2.0
+  - cython<3
+  - mesalib=23.2.1
+  - tqdm=4.66.2
+  - torchvision=0.16.2
+  - matplotlib=3.8.3
+  - tensorboard=2.16.2
+  - seaborn=0.13.2
+  - lockfile=0.12.2
+  - h5py=3.10.0
+  - torchmetrics=1.2.1
+  - google-auth-oauthlib=1.2.0
+  - dm-haiku=0.0.11
+  - setuptools==65.5.0
+  - pip=21.0
+  - pip:
+    - pybullet==3.2.5
+    - imageio==2.32.0
+    - gym==0.19.0
+    - mujoco==2.2.0
+    - mujoco-py==2.0.2.5
+    - mjrl @ git+https://github.com/aravindr93/mjrl@3871d93763d3b49c4741e6daeaebbc605fe140dc
+    - d4rl==1.1
+variables:
+  MUJOCO_GL: glfw
+  PYOPENGL_PLATFORM: glfw
+  TF_FORCE_GPU_ALLOW_GROWTH: "true"
+  XLA_PYTHON_CLIENT_PREALLOCATE: "false"
+  PYTHONFAULTHANDLER: 1
