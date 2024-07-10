@@ -1,5 +1,7 @@
 # Contrastive Planning
 
+Code for the paper [Inference via Interpolation: Contrastive Representations Provably Enable Planning and Inference](https://arxiv.org/abs/2403.04082).
+
 ## Installation
 
 1. Check conda is installed and mujoco200 binaries are in path:
